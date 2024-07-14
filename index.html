@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema básico</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <div id="buttons-inicial">
+            <input type="button" value="Cadastro" name="botaoCadastro">
+            <input type="button" value="Login" id="Login" name="botaoLogin">
+            <input type="button" value="Usuários" class="sumir" name="Usuarios">
+            <input type="button" value="Logout" class="sumir" name="Logout">
+            <input type="button" value="Perfil" class="sumir" name="perfil">
+        </div>
+        <p name="Conectado" id="paragrafo-conectado">Nenhum Usuário Logado</p>
+        <div class="box invisible" name="caixaCadastro">
+            <h1>Cadastre-se</h1>
+            <input type="text" placeholder="Digite o seu nome" name="Nome">
+            <input type="text" placeholder="Digite a sua idade" name="Idade">
+            <input type="text" placeholder="Digite o seu email" name="Email">
+            <input type="text" placeholder="Digite a sua senha" name="Senha">
+            <div class="box-button">
+                <input type="button" value="Cadastrar" name="Cadastrar">
+                <input type="button" value="Sair" name="fecharCadastro">
+            </div>
+        </div>
+        <div class="box invisible" name="caixaLogin">
+            <h1>Login</h1>
+            <input type="text" placeholder="Digite o seu email" name="LoginEmail">
+            <input type="text" placeholder="Digite a sua senha" name="LoginSenha">
+            <div class="box-button">
+                <input type="button" value="Entrar" name="Entrar">
+                <input type="button" value="Sair" name="fecharLogin">
+            </div>
+            <p>Esqueceu a senha?</p>
+        </div>
+        <div name="boxUsers" class="BoxUsers invisible">
+            <h1>Usuários</h1>
+            <div name="apresentar" class="apresentar"></div>
+            <input type="button" value="Sair" name="UsuariosSair">
+        </div>
+        <div name="PerfilUsers" class="BoxUsers invisible">
+            <h1>Informações do Usuário</h1>
+            <div name="mostrarInfo">
+
+            </div>
+            <input type="button" value="Sair" name="SairPerfil">
+        </div>
+
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

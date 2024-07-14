@@ -1,0 +1,136 @@
+@charset "UTF-8";
+/* Declarando os estilos globais */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root {
+    --fundo:#2A8C82;
+    --cor1: #9BF2EA;
+    --cor2: #260101;
+    --cor3: #41BFB3;
+}
+
+.visible {
+    visibility: visible;
+}
+
+.invisible {
+    visibility: hidden;
+}
+
+
+/* Estilizando a "main" e a área inicial */
+main {
+    background-color: var(--fundo);
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+}
+#buttons-inicial{
+    display: flex;
+    gap: 60px;
+}
+#paragrafo-conectado{
+    color: white;
+    font-weight: bolder;
+}
+input[value=Cadastro], input[value=Login], input[value=Usuários], input[value=Logout], input[value=Perfil]{
+    z-index: 0;
+    padding: 20px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: none;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.308);
+    background-color: var(--cor1);
+    color: var(--cor2);
+    transition-duration: .5s;
+}
+
+input[value=Cadastro]:hover, input[value=Login]:hover, input[value=Usuários]:hover, input[value=Logout]:hover,input[value=Perfil]:hover {
+    color: var(--cor1);
+    background-color: var(--cor2);
+    scale: 110%;
+}
+
+/* Estilizando a caixa de cadastro */
+.sumir {
+    display: none;
+}
+
+.box {
+    position: absolute;
+    z-index: 1;
+    border: 4px solid black;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+    background-color: var(--cor3);
+    border-radius: 15px;
+}
+
+.box input[type=text] {
+    width: 300px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.box .box-button {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+}
+
+.box input[type=button], .BoxUsers input[type=button]{
+    font-size: 20px;
+    padding: 10px;
+    width: 120px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 3px solid black;
+    background-color: rgb(186, 183, 183);
+}
+
+.box input[type=button]:hover, .BoxUsers input[type=button]:hover {
+    background-color: white;
+}
+.mostrarUsuario{
+    color: var(--cor2);
+    font-size: 25px;
+    cursor: pointer;
+    text-align: left;
+}
+.mostrarUsuario:hover{
+    background-color: var(--cor2);
+    color: white
+}
+.BoxUsers{
+    width: 300px;
+    position: absolute;
+    z-index: 1;
+    border: 4px solid black;
+    padding: 20px;
+    gap: 30px;
+    text-align: center;
+    background-color: var(--cor3);
+    border-radius: 15px;
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+}
+.apresentar{
+    text-align: left;
+}
+
